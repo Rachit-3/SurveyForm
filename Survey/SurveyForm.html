@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<style>
+    body {
+        background: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: sans-serif;
+        text-align: center;
+        width: 480px;
+        min-width: 50%;
+        margin: 0px auto 0px auto;
+    }
+
+    .content {
+        margin: auto;
+    }
+
+    .tag {
+        color: white;
+        padding: 0px 10% 0px 10%;
+    }
+
+    h1 {
+
+        margin-top: 100px;
+        padding: 0px 10% 0px 10%;
+
+    }
+
+    form {
+        background: rgba(0, 0, 0, 0.5);
+        margin: auto;
+        color: white;
+        text-align: left;
+        padding: 10%;
+        padding-top: 5%;
+        border-radius: 5px;
+
+    }
+
+
+    .input,
+    .Submit {
+        width: 100%;
+        border-radius: 5px;
+        height:50px;
+    }
+
+ 
+    :placeholder-shown,select {
+        padding-left: 20px;
+        height: 50px;
+
+
+    }
+
+    .select {
+        width: 105%;
+        border-radius: 5px;
+    }
+
+
+    #check {
+        margin-top: -20px;
+    }
+
+    .Submit {
+        text-align: center;
+        height: 50px;
+        background-color: palegreen;
+        width: 105%;
+    }
+   .cb
+    { transform: scale(2);
+        margin-right: 15px;
+        
+    }
+    textarea
+    {
+        border-radius: 5px;
+        margin-top:-10px ;
+    }
+</style>
+
+
+<body>
+    <p class="content">
+    <h1 class="tag">freeCodeCamp Survey Form</h1>
+    <p class="tag">Thank you for taking the time to help us improve the platform</p>
+
+    <form action="">
+        <label>
+            <p> Name</p> <input type="text" name="Name" class=" input" placeholder="Enter Your Name" required>
+        </label>
+        <label>
+            <p> Email</p> <input type="email" name="email" id="email" placeholder="Enter Your Email" class=" input"required>
+        </label>
+        <label>
+            <p>Age(Optional)</p> <input type="number" name="age" id="age" placeholder="Enter Your Age" class=" input">
+        </label>
+        <label>
+            <p>Which option best describes your current role?</p>
+            <select name="role" id="role" class="select">
+                <option value="">Select Current Role </option>
+                <option value="Student">Student</option>
+                <option value="Full_time_job">Full Time Job</option>
+                <option value="Full_time_learner"> Full Time Learner</option>
+                <option value="Not sure">Prefer Not To Say</option>
+                <option value="other">Other</option>
+        </label>
+
+        </select>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label>
+            <p><input type="radio" name="recommend" id="recommend"> Definitely</p>
+        </label>
+        <label>
+            <p><input type="radio" name="recommend" id="recomm"> May be</p>
+        </label>
+        <label>
+            <p><input type="radio" name="recommend" id="recommen"> Not Sure</p>
+        </label>
+        <label>
+            <p>
+                What is your favourite feature in free code camp </p>
+        </label>
+        <p><select name="feature" id="feature" class="select"required>
+                <option value="">Select an option </option>
+                <option value="challenge">Challenge</option>
+                <option value="project">Project</option>
+                <option value="community">Community</option>
+                <option value="OpenSource">Open Source</option>
+        </p>
+
+        </select>
+        <p>What would you like to see improved? </p>
+        <p id="check">(Check all that apply)</p>
+        <label>
+            <p ><input type="checkbox" name="Front-End" id="fend" class="cb">Front End Projects</p>
+        </label>
+
+        <label>
+            <p > <input type="checkbox" name="Back-End" id="bend" class="cb">Back End Projects</p>
+        </label>
+        <label>
+            <p > <input type="checkbox" name="Data Visualization" id="DV" class="cb">Data Visualization</p>
+        </label>
+        <label>
+            <p ><input type="checkbox" name="Challenges" id="chal" class="cb">Challenges</p>
+        </label>
+        <label>
+            <p ><input type="checkbox" name="Open Source" id="Open" class="cb">OpenSource</p>
+        </label>
+        <label>
+            <p > <input type="checkbox" name="videos" id="id" class="cb">Videos</p>
+        </label>
+        <label >
+        <p>Any Suggestions....</p>
+        <textarea name="" id="" cols="30" rows="5">text here</textarea>
+    </label>
+        <p> <input type="submit" value="Submit" class="Submit"></p>
+
+  
+
+    </form>
+    </p>
+</body>
+
+</html>
